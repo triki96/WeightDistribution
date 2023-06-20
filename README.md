@@ -1,13 +1,17 @@
 # WeightDistribution
-Estimators for the weight distribution of linear codes
+Estimators for the weight distribution of linear codes. 
+The repository consists of three folders: LDPC, RandomCodes and Utils.
 
-La repository è composta di tre cartelle: LDPC, RandomCodes e Utils.
 
-## UTILS
-Contiene codice di supporto per svolgere i test relativi alla stima dei pesi
-
+## Utils
+  Contains support code for performing weight estimation tests.
+  
 ## RandomCodes
-La cartella contiene due file. 
+The folder contains two files, *estimatorsComparison.sage* and *progressiveComparison.sage*.
+
+* *estimatorsComparison.sage* allows to choose a weight range $[w_{min},w_{max}]$ within which we want to estimate the weight distribution for the code under analysis. For each $w \in [w_{min},w_{max}]$ it is possible to set the parameter *max_attempt*, i.e. the maximum number of calls we want to make to ISD. The code will then make *max_attempt* attempts at ISD for every $w$ in the choosen set.
+
+* *progressiveComparison.sage* allows to choose a fixed weight ($w$) and a maximum number of calls to ISD (*max_attempt*). The code then progressively shows how the estimates of $N_C(w)$ improve as the number of calls to ISD increases.
 
 ## LDPC
-la cartella ldpc contiene il codice relativo al confronto fra i nuovi stimatori e quello vecchio. I test sono effettuati su codici LDPC presi da https://www.inference.org.uk/mackay/CodesFiles.html.
+The LDPC folder contains the code relating to the comparison between the new estimators and the old one. Tests are performed on LDPC codes taken from https://www.inference.org.uk/mackay/CodesFiles.html.
