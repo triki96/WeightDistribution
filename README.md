@@ -1,5 +1,6 @@
 # WeightDistribution
 Estimators for the weight distribution of linear codes. 
+This repository contains an implementation of the estimates presented in **?Titolo lavoro?**.
 The repository consists of three folders: LDPC, RandomCodes and Utils.
 
 
