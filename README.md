@@ -1,7 +1,7 @@
 # WeightDistribution
 Estimators for the weight distribution of linear codes. 
 This repository contains an implementation of the estimates presented in *"Information Set Decoding for the Estimate of
-the Weight Distribution"*. The repository consists of three folders: LDPC, RandomCodes and Utils.
+the Weight Distribution"*, by *Marco Baldi*, *Paolo Santini*, and *Giovanni Tognolini*. The repository consists of three folders: LDPC, RandomCodes and Utils.
 
 
 ## Utils
